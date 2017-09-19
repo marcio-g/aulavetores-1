@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+void main(){
+int i, op;
+int numero [9];
+    for (i = 0; i<=9; i++){
+    printf ("digite um numero\n\n");
+    scanf ("%d", &numero[i]);
+    op = numero[i]%2;
+    if (op==0){
+      numero[i] = 0;
+    }
+        else {
+            numero[i]=1;
+        }
+    }
+    for (i=0; i<=9; i++){
+    printf ("%d ", numero[i]);
+    }
+}
