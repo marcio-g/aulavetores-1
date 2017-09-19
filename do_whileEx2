@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdbool.h>
+
+void main(){
+    bool enquanto = 1;
+    int numero, op, par, impar;
+    par = 0;
+    impar = 0;
+    do{
+        printf("digite um numero\n");
+        scanf("%d", &numero);
+
+        if (numero==0){
+            enquanto=0;
+            break;
+        }
+
+        op = numero%2;
+
+        if (op==0){
+            par = par + 1;
+        }
+            else {
+                impar = impar + 1;
+            }
+    } while (enquanto == 1);
+printf ("numeros par = %d\n\n numeros impar = %d", par, impar);
+}
